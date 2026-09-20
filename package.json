@@ -1,0 +1,24 @@
+{
+  "name": "hpack-dynamic-table-core",
+  "version": "0.1.0",
+  "description": "HPACK subset (RFC 7541) encoder/decoder for HTTP/2 header blocks in test environments. No Huffman coding.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/",
+    "test:ts": "node --require ts-node/register --test test/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
