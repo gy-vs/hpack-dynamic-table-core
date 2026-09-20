@@ -1,0 +1,19 @@
+{
+  "name": "hpack-subset",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small HPACK (RFC 7541) subset for encoding/decoding HTTP/2 header blocks in tests",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "tsc -p . && node --test dist/test",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.0"
+  }
+}
